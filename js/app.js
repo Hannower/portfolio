@@ -14,7 +14,14 @@ function revealOnScroll() {
 }
 
 window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // 
+revealOnScroll(); 
+
+const hamburguer = document.querySelector('.hamburguer');
+const menu = document.querySelector('.menu');
+
+hamburguer.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+});
 
 
 

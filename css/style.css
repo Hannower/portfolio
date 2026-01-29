@@ -14,6 +14,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 10rem;
+    padding: 0 2rem;
     align-items: center;
     height: 4.5rem;
     position: sticky;
@@ -25,8 +26,6 @@ header {
     color: #1c60ee;
     font-size: 2.5rem;
 }
-
-
 
 .menu {
     color: #ffffff;
@@ -46,15 +45,22 @@ header {
     color: #1c60ee;
 }
 
+.hamburguer {
+    display: none;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 .sobre {
     height: 45rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-    h2 {
-        font-size: 1.9rem;
-    }
+.sobre h2 {
+    font-size: 2rem;
 }
 
 .card-sobre {
@@ -235,7 +241,12 @@ footer .contato {
     font-size: 1.9rem;
     border-radius: 900px;
     cursor: pointer;
+    transition: 0.5s;
+}
 
+.social-media:hover {
+    cursor: pointer;
+    font-size: 2.3rem;
 }
 
 .social-media a {
@@ -263,6 +274,40 @@ footer .contato {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .menu {
+        position: absolute;
+        top: 4.5rem;
+        right: 0;
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        background-color: #181d2b;
+        padding: 2rem 0;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: 0.4s ease;
+    }
+
+    .menu.ativo {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .hamburguer {
+        display: block;
+    }
 }
 
 
