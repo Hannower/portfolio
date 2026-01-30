@@ -61,6 +61,7 @@ header {
 
 .sobre h2 {
     font-size: 2rem;
+    text-align: justify;
 }
 
 .card-sobre {
@@ -224,7 +225,7 @@ footer h2 {
 }
 
 footer .contato {
-    height: 6rem;
+    height: 6rem auto;
     color: #f7f7f7;
     display: flex;
     flex-wrap: wrap;
@@ -324,10 +325,5 @@ footer .contato {
     .tag {
         font-size: 0.6rem;
 
-    }
-
-    footer {
-        height: 20rem;
-        margin-bottom: 2rem;
     }
 }
