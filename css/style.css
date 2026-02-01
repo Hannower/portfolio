@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #181d2b;
     font-size: 1rem;
@@ -73,22 +77,32 @@ header {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
 
-    img {
-        height: 12rem;
-        width: 12rem;
-        border-radius: 50%;
-    }
 
-    h3 {
-        color: #1c60ee;
-        text-align: center;
-        font-size: 1.8rem;
-    }
 
-    p {
-        text-align: center;
-    }
+.foto-container {
+    height: 12rem;
+    width: 12rem;
+    overflow: hidden;   
+    border-radius: 50%; 
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.card-sobre h3 {
+    color: #1c60ee;
+    text-align: center;
+    font-size: 1.8rem;    
+}
+
+.card-sobre p {
+    text-align: center;
 }
 
 .projetos {
